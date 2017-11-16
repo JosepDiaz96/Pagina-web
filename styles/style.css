@@ -1,0 +1,439 @@
+* {
+    font-family: 'Ruda', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: grime;
+    src: url(../fonts/grime.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    --main-text-color: #8d318a;
+    --secondary-text-color: #11010e;
+    --back-text-color: #410f40;
+}
+
+.clearfix::after {
+    content: " ";
+    visibility: hidden; 
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.navegador {
+    background-color: #8d318b00;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    opacity: 0.4;
+    transition: all 0.5s linear;
+    text-align: center;
+
+}
+
+.navegador:hover {
+    background-color: #8d318b00;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    opacity: 0.8;
+
+}
+
+.navegador > .navegador-lista {
+    list-style-type: none;
+    margin: 0px;
+    float: top;
+    font-size: 0px;
+    text-align: center;
+
+}
+
+.navegador > .navegador-lista > .navegador-item {
+    display: inline;
+    font-size: 16px;
+
+    
+
+}
+
+.navegador > .navegador-lista > .navegador-item a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: all 0.4s linear;
+
+}
+
+.navegador > .navegador-lista > .navegador-item.activo a {
+    color: white;
+    background-color: var(--secondary-text-color);
+    
+}
+
+.navegador > .navegador-lista > .navegador-item a:hover {
+    color: white;
+    background-color: var(--secondary-text-color);
+    
+}
+
+.header > .title-img {
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../imagenes/fondo.jpg);
+    height: 100vh;
+    transition: background-size 6s;
+    position: relative;
+    z-index: 1;
+    
+
+}
+
+
+
+
+.header > .title-img:hover {
+    background-size: 300% 300%;
+    position: relative;
+    opacity: 1;
+
+}
+
+.header > .title-img:hover {
+    background-size: 300% 300%;
+    position: relative;
+    
+
+}
+
+.header > .title {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 130px;
+    color: white;
+    font-family: grime;
+    animation: titleAnimation 2s forwards;
+    animation-delay: 0s;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.header > .logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -105px;
+    width: 25vh;
+    opacity: 0;
+    animation: logoAnimation 3s forwards;
+    animation-delay: 1s;
+    z-index: 2;
+
+    text-align: center center;
+}
+
+.titulo {
+    margin-top: 60px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    color: #d4b5d8;
+}
+
+
+
+.section-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: var(--secondary-text-color);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: 0vw;
+}
+
+.work {
+    background-color: var(--secondary-text-color);
+    color: var(--main-text-color);
+    margin-bottom: 30vw;
+    
+}
+
+.ultimos-trabajos > .lastwork1 img{
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.ultimos-trabajos > .lastwork2 img{
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.ultimos-trabajos > .lastwork3 img{
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.ultimos-trabajos {
+    color: #c6b6c9;
+}
+.bio {
+    margin-top: 30px;
+    padding-right: 50px; 
+    
+}
+
+
+
+.work > .digital img {
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 50%;
+
+
+}
+
+.work > .tradicional img {
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 50%;
+
+}
+
+.work > .mixto img {
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 50%;
+
+}
+
+.footer {
+    margin: 0px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: var(--secondary-text-color);
+    color: var(--main-text-color);
+    float: center;
+    
+}
+
+/*.footer {
+    
+    height: 50px;
+    display: flex;
+    align-items: center;
+}*/
+
+.contact {
+    background-color: var(--secondary-text-color);
+    color: var(--main-text-color);
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.contact {
+    color: #c6b6c9;
+    margin-top: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    float: top;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.form {
+    padding: 10px;
+}
+
+
+.form .form-row {
+    padding: 10px;
+}
+
+.form-row {
+    padding: 5px;
+}
+
+#googleMap {
+
+}
+
+
+.precios {
+    background-color: var(--back-text-color);
+    color: #c6b6c9;
+}
+
+.anor img{
+    border-radius: 5%;
+    max-width: 100%;
+    float: left;
+    margin: 10px;
+}
+
+.depre img{
+    border-radius: 5%;
+    max-width: 100%;
+    float: right;
+    margin: 10px;
+}
+
+.bipo img{
+    border-radius: 5%;
+    max-width: 100%;
+    margin: 10px;
+    float: center;
+}
+
+.trico img{
+    border-radius: 5%;
+    max-width: 100%;
+    margin: 10px;
+    float: right;
+}
+
+.dio img{
+    border-radius: 5%;
+    max-width: 100%;
+    margin: 10px;
+    float: left;
+}
+
+
+.sin img{
+    border-radius: 5%;
+    max-width: 100%;
+    margin: 10px;
+    float: center;
+}
+
+
+
+.dora img{
+    border-radius: 5%;
+    max-width: 100%;
+    margin: 10px;
+    float: right;
+}
+.esq img{
+    border-radius: 5%;
+    max-width: 100%;
+    margin: 10px;
+    float: center;
+}
+
+.veg img{
+    border-radius: 5%;
+    max-width: 100%;
+    margin: 10px;
+    float: left;
+}
+.viva img{
+    border-radius: 5%;
+    max-width: 100%;
+    margin: 10px;
+    float: center;
+}
+
+button[disabled] {
+    opacity: 0.5;
+    
+}
+
+input [type=button], input[type=submit], button {
+    background-color: rgb(88, 20, 92);
+    border: none;
+    color: white;
+    padding: 14px 40px;
+    text-decoration: none;
+    margin: 4px 4px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+thead > tr {
+    background-color: rgb(43, 7, 40);
+}
+
+th {
+    height: 50px;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid rgb(43, 7, 40);
+}
+
+tbody > tr:hover {
+    background-color: #421b38
+}
+
+
+
+
+
+
+
+
+
+@keyframes titleAnimation {
+    0% {
+        font-size: 200px;
+    }
+    50% {
+        font-size: 180px;
+    }
+    100% {
+        font-size: 100px;
+        visibility: visible;
+    }
+}
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

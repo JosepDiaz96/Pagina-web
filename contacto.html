@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Ruda" rel="stylesheet">
+    <title>Contacto</title>
+    
+    </script>
+</head>
+<body>
+        <body style="background-color:var(--back-text-color)">
+                
+            </body>
+    <nav class="navegador"> 
+            <ul class="navegador-lista">
+                <li class="navegador-item">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="navegador-item">
+                     <a href="index.html#ultimostrabajos">Últimos trabajos</a>
+                </li>
+                <li class="navegador-item">
+                    <a href="index.html#trabajos">Trabajos</a>
+                </li>
+                <li class="navegador-item">
+                    <a href="precios.html">Precios</a>
+                </li>
+                <li class="navegador-item activo">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li class="navegador-item">
+                    <a href="https://twitter.com/mecagonti">Redes</a>
+                </li>
+        
+            </ul>
+    </nav>
+
+    <main>
+        <section class="contact ">
+            <center><h2>Contacta conmigo</h2></center>
+            <div class="row">
+
+    
+                    <div class="form"></div>
+                        <form name="contacto" method="get">
+                            <div class="form-row">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="nombre" required>
+
+                                
+                            </div>
+                            <div class="form-row">
+                            <label for="apellidos">Apellidos:</label>
+                                <input type="apellidos" id="apellidos" name="apellidos" placeholder="apellidos" required>
+                            </div>
+                            <div class="form-row">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="name@company.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                </div>
+                            
+                            <div class="form-row">
+                                <h4>Encargo</h4>
+                                <label for="tipo_dibujo_1">Blanco y negro tradicional</label>
+                                <input type="radio" id="tipo_dibujo_1" name="tipo-dibujo" value="Blanco y negro tradicional" required>
+
+                                <label for="tipo_dibujo_2">Color tradicional</label>
+                                <input type="radio" id="tipo_dibujo_2" name="tipo-dibujo" value="Color tradicional" required>
+
+                                <label for="tipo_dibujo_3">Blanco y negro digital</label>
+                                <input type="radio" id="tipo_dibujo_3" name="tipo-dibujo" value="Blanco y negro digital" required>
+
+                                <label for="tipo_dibujo_4">Color digital</label>
+                                <input type="radio" id="tipo_dibujo_4" name="tipo-dibujo" value="Color digital" required>
+
+                                <label for="tipo_dibujo_5">Otro</label>
+                                <input type="radio" id="tipo_dibujo_5" name="tipo-dibujo" value="Otro" required>
+
+
+
+                            </div>
+                            <div class="form-row">
+                                    <label for="detalles">Detalles:</label>
+                                    <input type="detalles" id="detalles" name="detalles" placeholder="Indica tus demandas" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            </div>
+                            <div class="form-row">
+                                <label for="obras">Número de ilustraciones:</label>
+                                <input type="number" id="obras" name="obras" min="1" max="50" required>
+                            </div>
+                            <div class="form-row">
+                                <button type="submit" id="enviar">Enviar</button>
+                            </div>
+                        
+                        </form>
+                    </section>
+                    </div>
+                </div>
+            
+    </main>
+
+
+    <footer class="footer">
+            <center>Josep Díaz Gascón &copy; 2017 BBAA</center>
+    </footer>
+
+    
+
+
+        
+</body>
+
+</html>
